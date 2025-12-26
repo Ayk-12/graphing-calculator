@@ -2,7 +2,10 @@
 
 This program visualizes mathematical functions in Python.
 
-insert image
+![graphing-calculator](https://github.com/Ayk-12/graphing-calculator/blob/main/graphing-calculator.png)
+
+Running the main file (*graphing_calculator.py*) should open a window like the one above without any functions.
+If the "pygame" package is not installed, the program will not run. Download it using `pip install pygame`.
 
 ## Usage
 The program supports adding, removing, and saving funtions, in addition to creating custom functions and calculating specific values.
@@ -16,10 +19,11 @@ Separate the fields by singular spaces.
 After Enter is pressed, the function should appear on the graph (it may take up to a second, depending mainly on the *precision* and *from-to* interval of the function).
 If the function did not appear, then something went wrong and the program could not draw the function. Re-enter the function, and check the syntax and notes below.
 
-Example:
-insert image
+#### Example
+![adding-new-function-a](https://github.com/Ayk-12/graphing-calculator/blob/main/adding-new-function-a.png)
+![adding-new-function-b](https://github.com/Ayk-12/graphing-calculator/blob/main/adding-new-function-b.png)
 
-Notes for adding functions:
+#### Notes for adding functions
 - *name* refers to the name of the function (usually f or g...)
 - the expression must NOT include any spaces whatsoever
 - use parentheses in the expression; x**2 and (x)**2 are different functions for negative numbers (the correct one is (x)**2)
@@ -40,13 +44,15 @@ If something goes wrong and the program crashes when adding a function (due to u
 To find the value of a function at a specific point, left click the **f(a) = b** button on the panel to the left. The syntax is as follows:
 {name}({value})
 The result will appear on the bottom right corner of the screen, and a black dot on the graph will appear if the coordinate (value, function(value)) is visible on the screen.
-If the coordinate is not visible, use the scroll wheel of the mouse to zoom in/out, or move around the graph using the arrow keys or left click dragging.  
+If the coordinate is not visible, use the scroll wheel of the mouse to zoom in/out, or move around the graph using the arrow keys or by left click dragging.  
 
-Example:
-insert image
+#### Example
+![calculating-specific-value-a](https://github.com/Ayk-12/graphing-calculator/blob/main/calculating-specific-value-a.png)
+![calculating-specific-value-b](https://github.com/Ayk-12/graphing-calculator/blob/main/calculating-specific-value-b.png)
 
 ### Writing a custom function
 The program supports custom user-written functions. To add one, write any number returning Python function in *SomeFunctions.py*. The custom function can have any number of input parameters, as long as it returns a single number. To add a custom function to graph, abide by the syntax rules above, only replace the expression by "sf.{function name}".
 
-Example:
-insert image
+#### Example
+![adding-custom-function-a](https://github.com/Ayk-12/graphing-calculator/blob/main/adding-custom-function-a.png)
+![adding-custom-function-b](https://github.com/Ayk-12/graphing-calculator/blob/main/adding-custom-function-b.png)
